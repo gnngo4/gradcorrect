@@ -8,7 +8,7 @@ docker build -t gradcorrect-cli .
 
 Run
 ```bash
-docker run gnvngo/gradcorrect -g <grad-coefficient-file> -i <input-nifti> -j <intensity-correction-nifti> -w <gradient-correction-warp-nifti>
+docker run gradcorrect-cli -g <grad-coefficient-file> -i <input-nifti> -j <intensity-correction-nifti> -w <gradient-correction-warp-nifti>
 ```
 Outputs: `intensity-correction-nifti` and `gradient-correction-warp-nifti`. These files can be used on the `input-nifti` to correct for gradient non-linearities.
 
