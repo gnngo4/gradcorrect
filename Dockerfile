@@ -40,6 +40,9 @@ ENV ANTSPATH /opt/ants
 ENV LD_LIBRARY_PATH /opt/niftyreg-1.3.9/lib:$LD_LIBRARY_PATH 
 ENV PATH /opt/niftyreg-1.3.9/bin:$PATH
 
+# add missing dependencies 
+RUN pip install nibabel==2.5.1
+
 #this app:
 ENV PATH /gradcorrect:$PATH
 
